@@ -1,0 +1,15 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  NuGetDirectory: ${{ github.workspace}}/nuget
+
+jobs:
+  publish_nuget:
+    uses: clcl0n/cms-workflows/.github/workflows/publish-nuget.yaml@main
+    with:
+      version: ${{ github.ref_name }}
