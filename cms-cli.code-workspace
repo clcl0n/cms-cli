@@ -7,6 +7,7 @@
 	],
 	"settings": {
 		"editor.formatOnSave": true,
+		"explorer.sortOrder": "type",
 		"[csharp]": {
 			"editor.defaultFormatter": "csharpier.csharpier-vscode"
 		},
